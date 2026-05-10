@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f2fe 0%, #bbdefb 100%);
+            color: #0d47a1;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 700px;
+            background: transparent;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .letter-container {
+            position: relative;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./kavya16.jpg') center/cover no-repeat;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 50px rgba(13, 71, 161, 0.15);
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Blue Hearts Border Decoration */
+        .letter-container::before,
+        .letter-container::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            left: 0;
+            background: repeating-linear-gradient(90deg, transparent, transparent 15px, #2196F3 15px, #2196F3 18px, transparent 18px, transparent 25px, #1976D2 25px, #1976D2 28px, transparent 28px, transparent 35px, #64B5F6 35px, #64B5F6 38px, transparent 38px, transparent 45px);
+            background-size: 45px 100%;
+            border-radius: 4px;
+        }
+
+        .letter-container::before {
+            top: 0;
+        }
+
+        .letter-container::after {
+            bottom: 0;
+        }
+
+        .letter-container .side-decoration {
+            position: absolute;
+            top: 0;
+            width: 8px;
+            height: 100%;
+            background: repeating-linear-gradient(180deg, transparent, transparent 15px, #2196F3 15px, #2196F3 18px, transparent 18px, transparent 25px, #1976D2 25px, #1976D2 28px, transparent 28px, transparent 35px, #64B5F6 35px, #64B5F6 38px, transparent 38px, transparent 45px);
+            border-radius: 4px;
+        }
+
+        .side-decoration.left {
+            left: 0;
+        }
+
+        .side-decoration.right {
+            right: 0;
+        }
+
+        .letter-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .letter-content h2 {
+            font-size: 32px;
+            color: #2196F3;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+
+        .letter-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #1565C0;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .letter-content .wishes {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #0d47a1;
+            letter-spacing: 0.5px;
+        }
+
+        .page > .controls {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .final-link {
+            padding: 14px 26px;
+            border-radius: 999px;
+            border: none;
+            background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .final-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(13, 71, 161, 0.2);
+        }
+
+        .back-link {
+            padding: 14px 26px;
+            border-radius: 999px;
+            border: 2px solid #0d47a1;
+            background: transparent;
+            color: #0d47a1;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            background: rgba(13, 71, 161, 0.05);
+        }
+
+        @media (max-width: 640px) {
+            .letter-container {
+                padding: 40px 25px;
+            }
+
+            .letter-content h2 {
+                font-size: 24px;
+            }
+
+            .letter-content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="letter-container">
+            <div class="side-decoration left"></div>
+            <div class="side-decoration right"></div>
+            <div class="letter-content">
+                <h2>💙 Happy Birthday, Chelliii! 💙</h2>
+                <p>
+                    You are one of the most special people in my life, and I feel truly lucky to have you as my sister.
+                    On this special day, we want to celebrate the beautiful soul that you are. 
+                    Your kindness, warmth, and infectious smile brighten every room you walk into.
+                    Watching you grow has been one of the most beautiful parts of my life.
+                </p>
+                <p>
+                    May this year bring you endless joy, incredible adventures, and dreams coming true. 
+                    Thank you for being such an amazing part of our lives. You truly are one of a kind!
+                    No matter how much we tease or fight sometimes, always remember that 
+                    I will forever care for you, support you, and stand by your side. 
+                    I hope this birthday brings you endless joy, success, laughter, and all the love you deserve.
+                </p>
+                <p>
+                    Cheers to you – keep shining bright, keep spreading love, and keep being the wonderful 
+                    person we all admire. Your presence makes every celebration brighter.
+                    Keep shining, keep dreaming, and never stop being the wonderful person you are.
+                </p>
+                <div class="wishes">
+                    <p>Happy Birthday once again, little sister.</p>
+                    <p>With lots of love,</p>
+                    <p>Your loving brother 💖</p>
+                    <p>✨ Shine Bright Today and Always ✨</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a class="final-link" href="final.html">Go to Final Wish Page</a>
+            <a class="back-link" href="index.html">← Back to Birthday Page</a>
+        </div>
+    </div>
+
+    <script>
+        const slots = [
+            { image: './kavya1.jpg', text: 'Happy Birthday, Chelliiii...! Shine bright today and always.' },
+            { image: './kavya3.jpg', text: 'May your day be filled with laughter and endless love.' },
+            { image: './kavya4.jpg', text: 'Wishing you a year of dreams coming true.' },
+            { image: './kavya5.jpg', text: 'You are loved more than words can say.' },
+            { image: './kavya6.jpg', text: 'Cheers to the sweetest sister and the best memories.' },
+            { image: './kavya7.jpg', text: 'Every moment with you is a gift. Happy Birthday!' },
+            { image: './kavya8.jpg', text: 'Keep smiling, keep shining, and keep being amazing.' },
+            { image: './kavya9.jpg', text: 'Your kindness and joy light up every room.' },
+            { image: './kavya10.jpg', text: 'Today we celebrate the wonderful person you are.' },
+            { image: './kavya11.png', text: 'Sending you hugs, love, and the happiest birthday wishes.' },
+            { image: './kavya12.jpg', text: 'May your birthday bring you all the happiness you deserve.' },
+            { image: './kavy13.jpg', text: 'A beautiful year ahead, filled with smiles and success.' },
+            { image: './kavya14.jpg', text: 'Thank you for being the incredible sister you are.' },
+            { image: './kavya15.jpg', text: 'Your presence makes every celebration brighter.' },
+            { image: './kavya16.jpg', text: 'Here’s to love, joy, and unforgettable moments.' }
+        ];
+
+        // No JavaScript needed for static letter display
+
+        function renderThumbs() {}
+
+        function positionThumbs() {}
+
+        // Event listeners removed
+
+        function renderSlot() {}
+
+        // Final initialization removed
+    </script>
+</body>
+</html>
